@@ -1,0 +1,7 @@
+{
+    "params": {
+        "company_name": "AAA",
+        "email": "samplemail@provideer.com",
+        "password_email": "password of the email?"
+    }
+}
