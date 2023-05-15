@@ -33,6 +33,7 @@ def login_deptno():
             print('\nPlease recheck department no (Tip: Enter all numbers not alphabets!)')
 
 def logincheck(deptno):
+    # Check if the department number exists in the database
     db.execute('SELECT dept_no FROM dept')
     deptno_dict = {i[0] for i in db.fetchall()}
     newline = '\n'
@@ -49,6 +50,8 @@ def login_user(deptno):
     print('---------------------------------------')
     password = input('Please enter your password\n')
     hashpass = hashlib.md5(password.encode()).hexdigest()
+    
+    # Check if the entered credentials exist in the database
     db.execute(f'SELECT * FROM user WHERE password="{hashpass}" AND dept_no="{deptno}" AND useradmin_id="{userid}"')
     query = db.fetchall()
     if query is None or query == []:
@@ -63,14 +66,20 @@ def login_user_in(userid, hashpass, deptno, work=None):
     logintime = datetime.now()
     db.execute(f'SELECT branch FROM user WHERE useradmin_id="{userid}"')
     branch = db.fetchall()[0][0]
+    
     if work is None:
+        # Insert the login details into the login table
         db.execute(f'INSERT INTO login(userid, branch, session_in, dept_no) VALUES("{userid}", "{branch}", "{logintime}", "{deptno}")')
         connection.commit()
     else:
+        # Update the session time for an existing login
         db.execute(f'UPDATE login SET session={datetime.now()} WHERE userid="{userid}" AND session_out="0000%"')
+    
     branchget = userid.split("#")
     print('Please wait, you are being redirected there! in 5 sec.....')
     time.sleep(5)
+    
+    # Redirect to the appropriate branch based on the user's branch
     if branch == 'ADMIN':
         adminHome(userid, logintime)
     elif branch == 'BILL GENERATION':
@@ -79,3 +88,6 @@ def login_user_in(userid, hashpass, deptno, work=None):
         bilEmailHome(userid, logintime)
 
 welcome_message()
+```
+
+Please note that the code assumes the existence of certain files (`config.json`, `welcome.txt`, etc.) and a specific database structure. Make sure
