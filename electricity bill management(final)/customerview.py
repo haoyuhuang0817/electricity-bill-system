@@ -6,17 +6,22 @@ import sys
 import time
 from clearscreen import clear
 
+# Database connection
 connection = c.connect(host='localhost', database='electricity_bill', user='root', password='')
 db = connection.cursor()
 
+# Get the file path for the config.json file
 THIS_FOLDER = path.dirname(path.abspath(__file__))
 my_file = path.join(THIS_FOLDER, 'files', 'config_file', 'config.json')
 
+# Read configuration parameters
 with open(my_file, 'r') as c:
     params = json.load(c)["params"]
 
 def consumerDetails():
-    clear()
+    clear()  # Clear the screen
+
+    # Retrieve the existing consumer numbers from the database
     db.execute('SELECT consumerno FROM customer')
     detailsconsumerno = {i[0] for i in db.fetchall()}
 
@@ -33,6 +38,7 @@ def consumerDetails():
         else:
             break
 
+    # Retrieve customer details for the given consumer number and current month
     db.execute(f'SELECT * FROM customer WHERE consumerno={consumerno} AND month="{mydate.strftime("%B")}"')
     custdetails = db.fetchone()
 
@@ -42,6 +48,7 @@ def consumerDetails():
         my_file1 = path.join(THIS_FOLDER, 'files', 'messages', 'custdetails.txt')
         with open(my_file1, 'r') as c1:
             fileread = c1.read()
+            # Format the template with customer details and print it
             print(fileread.format(params['company_name'], custdetails[3], custdetails[1], custdetails[2],
                                   custdetails[4], custdetails[5], custdetails[-1], custdetails[8], custdetails[9]))
 
