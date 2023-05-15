@@ -17,6 +17,7 @@ with open('files/config_file/config.json', 'r') as c:
     params = json.load(c)["params"]
 
 def bilEmailHome(userid, logintime):
+    # Clear the console screen
     clear()
     print(f"{params['company_name']} BILL EMAIL DEPARTMENT\n\n")
     print(f"Welcome {userid}! Logged in at {logintime}\n")
