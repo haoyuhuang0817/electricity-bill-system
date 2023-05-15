@@ -1,0 +1,7 @@
+The user is created with the following credentials:
+
+USERNAME : {}
+PASSWORD : {}
+BRANCH : {}
+DEPARTMENT NO : {}
+USERADMIN ID : {}
