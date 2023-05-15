@@ -88,6 +88,3 @@ def login_user_in(userid, hashpass, deptno, work=None):
         bilEmailHome(userid, logintime)
 
 welcome_message()
-```
-
-Please note that the code assumes the existence of certain files (`config.json`, `welcome.txt`, etc.) and a specific database structure. Make sure
