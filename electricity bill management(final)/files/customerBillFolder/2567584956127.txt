@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------
+                                        AAA ELECTRICITY CUSTOMER BILL
+--------------------------------------------------------------------------------------------------------
+
+Consumer Name : Brianna Joseph
+
+Meter No : 1567585
+Consumer No : 7584956127
+Meter Load : 4.5
+Units Consumed : 256 
+
+Meter Rent : $10
+MVCA : $60
+Fixed Charge : $100
+Rebate : $1.6
+Adujustment Charges : 6
+Net Amount Payable : $ 1643.4
+
+Email : briannajoseph@gmail.com
+
+Address : 765 Maple Avenue, Apt. 3B, New York, NY 10021

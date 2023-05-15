@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------
+                                        AAA ELECTRICITY CUSTOMER BILL
+--------------------------------------------------------------------------------------------------------
+
+Consumer Name : David Lee
+
+Meter No : 1567587
+Consumer No : 7584956129
+Meter Load : 4.5
+Units Consumed : 586 
+
+Meter Rent : $10
+MVCA : $60
+Fixed Charge : $100
+Rebate : $1.6
+Adujustment Charges : 6
+Net Amount Payable : $ 4006.4
+
+Email : davidlee789@gmail.com
+
+Address : 456 Elm Street, New York, NY 10002

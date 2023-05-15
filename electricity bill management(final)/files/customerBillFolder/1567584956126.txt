@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------
+                                        AAA ELECTRICITY CUSTOMER BILL
+--------------------------------------------------------------------------------------------------------
+
+Consumer Name : Anthony Williams
+
+Meter No : 1567584
+Consumer No : 7584956126
+Meter Load : 4.5
+Units Consumed : 156 
+
+Meter Rent : $10
+MVCA : $60
+Fixed Charge : $100
+Rebate : $1.5
+Adujustment Charges : 6
+Net Amount Payable : $ 997.5
+
+Email : anthonywilliams@gmail.com
+
+Address : 789 Broadway, Manhattan, NY 10001

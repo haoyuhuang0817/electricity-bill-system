@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------
+                                        AAA ELECTRICITY CUSTOMER BILL
+--------------------------------------------------------------------------------------------------------
+
+Consumer Name : Wei Wang
+
+Meter No : 1567581
+Consumer No : 7584956123
+Meter Load : 4.5
+Units Consumed : 456 
+
+Meter Rent : $10
+MVCA : $60
+Fixed Charge : $100
+Rebate : $1.6
+Adujustment Charges : 6
+Net Amount Payable : $ 3075.4
+
+Email : weiwang456@gmail.com
+
+Address : 7A Bleecker Street, New York, NY 10012

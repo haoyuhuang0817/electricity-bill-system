@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------
+                                        AAA ELECTRICITY CUSTOMER BILL
+--------------------------------------------------------------------------------------------------------
+
+Consumer Name : Leslie Cobb
+
+Meter No : 1567588
+Consumer No : 7584956130
+Meter Load : 4.5
+Units Consumed : 36 
+
+Meter Rent : $10
+MVCA : $60
+Fixed Charge : $100
+Rebate : $1
+Adujustment Charges : 6
+Net Amount Payable : $ 352
+
+Email : lesliecobb@gmail.com
+
+Address : 3404 Frosty Lane, Binghamton NY 13904

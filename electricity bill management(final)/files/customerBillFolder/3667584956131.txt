@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------
+                                        AAA ELECTRICITY CUSTOMER BILL
+--------------------------------------------------------------------------------------------------------
+
+Consumer Name : Aman Sa
+
+Meter No : 1567589
+Consumer No : 7584956131
+Meter Load : 4.5
+Units Consumed : 366 
+
+Meter Rent : $10
+MVCA : $60
+Fixed Charge : $100
+Rebate : $1.6
+Adujustment Charges : 6
+Net Amount Payable : $ 2431.4
+
+Email : amansa123@gmail.com
+
+Address : 987 Elm Street, Unit 2C, New York, NY 10016
